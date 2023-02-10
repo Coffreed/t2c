@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['../styles.css'],
+  encapsulation: ViewEncapsulation.None
 })
-export class AppComponent {
-  title = 't2c';
+export class AppComponent implements AfterViewInit, OnInit {
+  ngOnInit() {
+  }
+
+  ngAfterViewInit() {
+  }
 }
